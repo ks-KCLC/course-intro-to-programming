@@ -9,5 +9,6 @@
     "isort.args": [
         "--profile",
         "black"
-    ]
+    ],
+    "notebook.output.textLineLimit": 100
 }
