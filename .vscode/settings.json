@@ -1,14 +1,11 @@
 {
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
             "source.organizeImports": "explicit"
-        }
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "isort.args": [
-        "--profile",
-        "black"
-    ],
     "notebook.output.textLineLimit": 100
 }
