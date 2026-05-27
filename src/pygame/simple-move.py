@@ -25,7 +25,7 @@ while running:
 
     screen.fill(pygame.Color("black"))
     pygame.draw.rect(screen, pygame.Color("white"), (x, y, 40, 40))
-    pygame.display.flip()
+    pygame.display.update()
     clock.tick(60)
 
 pygame.quit()
