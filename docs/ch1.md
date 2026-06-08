@@ -40,7 +40,7 @@ section {
 1. [資料置き場](https://github.com/ks-KCLC/course-intro-to-programming) にアクセス
 2. [Google Colab](https://colab.research.google.com/?hl=ja) にアクセス
 3. 「ノートブックを開く」ダイアログで「GitHub」を選択
-4. [資料置き場](https://github.com/ks-KCLC/course-intro-to-programming)の URL (<https://github.com/ks-KCLC/course-intro-to-programming>) を入力して検索
+4. [資料置き場](https://github.com/ks-KCLC/course-intro-to-programming) の URL (<https://github.com/ks-KCLC/course-intro-to-programming>) を入力して検索
 5. 該当する講義回のノートブックをクリック (ex. `src/apg4b/ch1.ipynb`)
 6. 開いたノートブック上で講義を進める
 
