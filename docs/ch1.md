@@ -25,6 +25,7 @@ section {
 
 ## 目次
 
+- 講義の進め方
 - [1.00.はじめに](https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_a)
 - [1.01.出力とコメント](https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_b)
 - [1.02.プログラムの書き方とエラー](https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_c)
