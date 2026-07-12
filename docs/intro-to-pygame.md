@@ -30,27 +30,25 @@ section {
 PowerShell がインストールされているか確認！
 [インストール方法](https://learn.microsoft.com/ja-jp/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6)
 
-### Mac
+### Windows, Mac 共通
 
-brew がインストールされているか確認！
-[インストール方法](https://brew.sh)
+テキストエディタ（VSCode など）がインストールされているか確認！
+[インストール方法（VSCode の場合）](https://code.visualstudio.com/Download)
 
 ---
 
 ## [uv のインストール](https://docs.astral.sh/uv/getting-started/installation/)
 
 Python をインストールするのに、uv というパッケージマネージャを通します。
-仮想環境の構築にデフォルトの `venv` などより使いやすいと思います。
+仮想環境の構築にデフォルトの `venv` などより使いやすいです。
 
 ### Windows
 
 Standalone installer: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-WinGet: `winget install --id=astral-sh.uv  -e`
 
 ### Mac
 
 Standalone installer: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-Homebrew: `brew install uv`
 
 ---
 
@@ -79,7 +77,7 @@ echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 
 ## [Python のインストール](https://docs.astral.sh/uv/guides/install-python/)
 
-`uv python install 3.12`
+`uv python install 3.13`
 
 ---
 
@@ -98,8 +96,8 @@ Xcode Command Line Tools から
 ## 環境構築完了！始めよう
 
 ```zsh
-uv init hello-pygame
-cd hello-pygame # VSCode などで開く
+uv init hello-pygame # カレントディレクトリ下に ./hello-pygame が作られる
+code hello-pygame # VSCode など、自身のテキストエディタでフォルダ（./hello-pygame）を開く、エディタから指定しても OK
 uv run main.py # 文字が出力される
 uv add pygame
 # main.py を pygame のサンプルプログラム（下記）に書き換える
@@ -126,7 +124,7 @@ while True:
 
 ## Pygame の学習方法
 
-さっき実行した `main.py` のように、一つのファイルにプログラムを書いていく方式。
+さっき実行した `main.py` のように、Pygame は一つのファイルにプログラムを書いていく方式。
 初めはインターネットから拾ってきたり AI とかに書かせたりして、プログラムを変えて遊んでみても良いと思う。
 
 プログラムには APG4b の学習で見慣れた部分もあると思うけど、`pygame.init` 関数とか pygame 固有の機能が他にも多く出てくるから、それに特化した学習が必要になる。
@@ -137,7 +135,7 @@ Web 記事で学習する場合も好みではあるけど、[Pygame超入門](h
 
 ## Pygame の学習方法
 
-一応、他のゲーム開発ライブラリ（エンジン）もあって、下のようなものがある。
+一応、他のゲーム開発ライブラリ（エンジン）もあって、以下のようなものがある。
 ただ、Python で開発するなら Pygame が一番良いと思う。
 
 - Unity (C#)
@@ -152,4 +150,4 @@ Web 記事で学習する場合も好みではあるけど、[Pygame超入門](h
 自分も上手く説明できないんですが、ライブラリ＜フレームワーク＜エンジンのイメージです。
 Unity はゲームエンジン（GUI エディターとかが提供されている）、pygame はゲームライブラリ（自分のソースコードで全て制御）みたいな感じです。
 
-![w:550](img/image.png)
+![w:550](img/library.png)
